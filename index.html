@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>For Jeevana 🌸</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel="stylesheet" href="style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+</head>
+<body>
+
+<div id="lock">
+  <h2>Only for Jeevana 💗</h2>
+  <input type="password" id="pass" placeholder="Enter our secret">
+  <button onclick="unlock()">Unlock</button>
+</div>
+
+<audio id="bgm" loop>
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<div id="particles"></div>
+
+<section class="panel active">
+  <h1 class="title glow">Jeevana 🌸</h1>
+  <p class="text">Baby… this is my heart.</p>
+</section>
+
+<section class="panel">
+  <p class="text">I failed you when you needed me most.</p>
+</section>
+
+<section class="panel image">
+  <img src="images/memory1.jpg">
+</section>
+
+<section class="panel">
+  <p class="text">You trusted me to stay awake for you… and I didn’t.</p>
+</section>
+
+<section class="panel image">
+  <img src="images/memory2.jpg">
+</section>
+
+<section class="panel">
+  <p class="text">You are the home I always want to come back to.</p>
+</section>
+
+<section class="panel image">
+  <img src="images/memory3.jpg">
+</section>
+
+<section class="panel final">
+  <button onclick="accept()">💗 I forgive you</button>
+  <button onclick="deny()">💔 I need time</button>
+  <p id="reply"></p>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
